@@ -25,9 +25,9 @@ class Config(object):
         #Get From Here.https://www.mongodb.com/
         MONGO_URL = environ.get("MONGO_URL", "mongodb+srv://vikashgup87:EDRIe3bdEq85Pdpl@cluster0.pvoygcu.mongodb.net/?retryWrites=true&w=majority")
         #Don't change this value:https://arq.hamker.in
-        ARQ_API_URL = environ.get("ARQ_API_URL")
+        ARQ_API_URL = environ.get("ARQ_API_URL", "https://arq.hamker.in/api")
         #Get this from @ARQRobot.
-        ARQ_API_KEY = environ.get("ARQ_API_KEY")
+        ARQ_API_KEY = environ.get("ARQ_API_KEY", "ILMBPM-LURVTQ-XWMSLY-ICNJDF-ARQ")
         #now you can set custom command handler for rose like : / ! ,
         COMMAND_PREFIXES = environ.get("COMMAND_PREFIXES")
         #The Telegram channel id you want focus user.(User can't start your bot without join it)
@@ -126,3 +126,4 @@ An  advanced telegram Group management Bot For helpYou Protect Your Groups & Sui
 )
 
         
+
