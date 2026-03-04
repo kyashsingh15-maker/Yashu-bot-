@@ -5,25 +5,25 @@ from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
 class Config(object):
         #Your telegram BOT username(without @) : get it from @BotFather
-        BOT_USERNAME = environ.get("BOT_USERNAME")
+        BOT_USERNAME = environ.get("BOT_USERNAME", "senpai_group_assistant_bot")
         #Your telegram BOT API token : get it from @BotFather
-        BOT_TOKEN = environ.get("BOT_TOKEN")
+        BOT_TOKEN = environ.get("BOT_TOKEN", "8707177647:AAGvtw_kgAQlX-Ta5uvVPiMjhKMCnnLieyg")
         #API_ID of your Telegram Account my.telegram.org/apps
-        API_ID = int(environ.get("API_ID"))
+        API_ID = int(environ.get("API_ID", 35575906))
         #API_HASH of your Telegram Account my.telegram.org/apps
-        API_HASH = environ.get("API_HASH")
+        API_HASH = environ.get("API_HASH", "7846db2770329a3402168a24c09ec462")
         #API_ID of your Telegram Account my.telegram.org/apps
         API_ID1 = int(environ.get("API_ID1"))
         #API_HASH of your Telegram Account my.telegram.org/apps
         API_HASH1 = environ.get("API_HASH1")
         #Your telegram user id
-        OWNER_ID = environ.get("OWNER_ID")
+        OWNER_ID = environ.get("OWNER_ID", 8051707749)
         #For logs channel to note down important bot level events, recommend to make this public. ex: '-123456'
-        LOG_GROUP_ID = environ.get("LOG_GROUP_ID")
+        LOG_GROUP_ID = environ.get("LOG_GROUP_ID", -1003742507227)
         #Get From Here.https://www.mongodb.com/ (Same as MONGO_URL but give differant value for this) 
         BASE_DB = environ.get("BASE_DB")
         #Get From Here.https://www.mongodb.com/
-        MONGO_URL = environ.get("MONGO_URL")
+        MONGO_URL = environ.get("MONGO_URL", "mongodb+srv://vikashgup87:EDRIe3bdEq85Pdpl@cluster0.pvoygcu.mongodb.net/?retryWrites=true&w=majority")
         #Don't change this value:https://arq.hamker.in
         ARQ_API_URL = environ.get("ARQ_API_URL")
         #Get this from @ARQRobot.
@@ -124,4 +124,5 @@ An  advanced telegram Group management Bot For helpYou Protect Your Groups & Sui
                         ]
                 ]
 )
+
         
