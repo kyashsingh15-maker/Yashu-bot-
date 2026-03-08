@@ -1,4 +1,5 @@
 import asyncio
+import aiohttp
 import importlib
 import re
 from contextlib import (
@@ -20,7 +21,6 @@ from Rose import (
     BOT_USERNAME,
     bot,
     BOT_NAME,
-    aiohttpsession
 )
 from Rose.plugins import ALL_MODULES
 from Rose.utils import paginate_modules
@@ -48,6 +48,7 @@ HELPABLE = {}
 
 async def start_bot():
     global HELPABLE
+    aiohttpsession = aiohttp.ClientSession()
 
     for module in ALL_MODULES:
         imported_module = importlib.import_module("Rose.plugins." + module)

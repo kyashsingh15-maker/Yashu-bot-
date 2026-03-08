@@ -13,9 +13,9 @@ class Config(object):
         #API_HASH of your Telegram Account my.telegram.org/apps
         API_HASH = environ.get("API_HASH", "7846db2770329a3402168a24c09ec462")
         #API_ID of your Telegram Account my.telegram.org/apps
-        API_ID1 = int(environ.get("API_ID1"))
+        API_ID1 = int(environ.get("API_ID1", API_ID))
         #API_HASH of your Telegram Account my.telegram.org/apps
-        API_HASH1 = environ.get("API_HASH1")
+        API_HASH1 = environ.get("API_HASH1", API_HASH)
         #Your telegram user id
         OWNER_ID = environ.get("OWNER_ID", 8051707749)
         #For logs channel to note down important bot level events, recommend to make this public. ex: '-123456'
